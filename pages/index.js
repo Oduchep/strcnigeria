@@ -84,7 +84,7 @@ export default function Home() {
                 <span className="mr-2 text-lg font-semibold text-primary-2">
                   Phone:
                 </span>
-                <a href="tel:+2348165672764">+2348165672764</a>
+                <a href="tel:+2349072065991">+234 9072065991</a>
               </p>
             </div>
           </div>

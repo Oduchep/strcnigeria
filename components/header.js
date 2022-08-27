@@ -29,8 +29,8 @@ const Header = () => {
               <AiOutlineMail className="text-white text-2xl" />
             </a>
 
-            <a href="tel:2348165672764" className="ml-5 text-white">
-              +234 816-567-2764
+            <a href="tel:+2349072065991" className="ml-5 text-white">
+              +234 907 206 5991
             </a>
           </div>
         </div>
