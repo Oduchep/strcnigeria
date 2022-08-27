@@ -13,7 +13,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <section className="bg-hero-pattern bg-cover bg-no-repeat h-96 md:h-[35rem] relative flex items-center justify-center">
+      <section className="bg-hero-pattern bg-cover bg-center bg-no-repeat h-96 md:h-[35rem] relative flex items-center justify-center">
         <div className="bg-black opacity-50 w-full h-full absolute top-0"></div>
         <div className="relative w-full md:w-1/2 text-center">
           <h2 className="text-white px-4 text-2xl md:text-5xl capitalize tracking-wide">

@@ -13,8 +13,8 @@ const AboutUs = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="h-[100vh]">
-        <p className="mt-20 text-center">In progress</p>
+      <div className="h-[65vh]">
+        <p className="mt-20 text-center"> Page In progress</p>
       </div>
     </div>
   );
