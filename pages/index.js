@@ -7,7 +7,7 @@ export default function Home() {
       <Head>
         <title> Society of Traditional Roman Catholics, Nigeria</title>
         <meta
-          name="description"
+          name="strc"
           content="society of traditional roman catholics of nigeria"
         />
         <link rel="icon" href="/favicon.ico" />

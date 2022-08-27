@@ -7,8 +7,8 @@ const AboutUs = () => {
       <Head>
         <title> Society of Traditional Roman Catholics, Nigeria</title>
         <meta
-          name="description"
-          content="society of traditional roman catholics of nigeria"
+          name="about page"
+          content="about society of traditional roman catholics of nigeria"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
