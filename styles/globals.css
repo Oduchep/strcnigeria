@@ -8,6 +8,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -19,7 +20,20 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: cormorantgaramond, cormorant garamond, serif;
+}
+
+p {
+  font-family: caudex, serif;
+}
+
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
@@ -27,4 +41,4 @@ a {
     color: white;
     background: black;
   }
-}
+} */
