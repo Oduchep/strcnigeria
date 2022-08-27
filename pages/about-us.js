@@ -14,7 +14,7 @@ const AboutUs = () => {
       </Head>
 
       <div className="h-[100vh]">
-        <p className="mt-20 text-center">In progress</p>
+        <p className="mt-20 text-center"> Page In progress</p>
       </div>
     </div>
   );
