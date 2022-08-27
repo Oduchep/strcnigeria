@@ -6,7 +6,20 @@ module.exports = {
     './components/**/*.{js,jsx,ts,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: '#002e5d',
+        'primary-2': '#BA9764',
+        'primary-3': '#fcf8ed',
+        'primary-lighter': '#002e5db0',
+        'primary-light': '#002e5dd9',
+        'primary-2-light': '#ba976499',
+        'primary-3-dark': 'f7f5e1',
+      },
+      backgroundImage: {
+        'hero-pattern': "url('https://photos.app.goo.gl/SYVY6t7HcpSkRMuUA')",
+      },
+    },
   },
   plugins: [],
 };
