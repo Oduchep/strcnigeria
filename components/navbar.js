@@ -60,22 +60,50 @@ const Navbar = ({ toggleNav, setToggleNav }) => {
 
         <ul className="mt-20 bg-white">
           <Link href="/">
-            <li className="w-fit text-sm uppercase font-light my-4 py-3 px-10 cursor-pointer transition-all ease-in-out hover:bg-primary-2 hover:font-normal hover:text-white">
+            <li
+              onClick={() => setToggleNav(false)}
+              className={`w-2/3 uppercase my-4 py-3 px-10 cursor-pointer transition-all ease-in-out hover:bg-primary-2 hover:font-normal hover:text-white ${
+                route === '/'
+                  ? 'text-base text-primary-2 font-semibold'
+                  : 'font-light text-sm'
+              }`}
+            >
               Home
             </li>
           </Link>
           <Link href="/about-us">
-            <li className="text-sm uppercase font-light my-4 py-3 px-10 cursor-pointer transition-all ease-in-out hover:bg-primary-2 hover:font-normal hover:text-white">
+            <li
+              onClick={() => setToggleNav(false)}
+              className={`w-2/3 uppercase my-4 py-3 px-10 cursor-pointer transition-all ease-in-out hover:bg-primary-2 hover:font-normal hover:text-white ${
+                route.includes('about-us')
+                  ? 'text-base text-primary-2 font-semibold'
+                  : 'font-light text-sm'
+              }`}
+            >
               About Us
             </li>
           </Link>
           <Link href="/">
-            <li className="text-sm uppercase font-light my-4 py-3 px-10 cursor-pointer transition-all ease-in-out hover:bg-primary-2 hover:font-normal hover:text-white">
+            <li
+              onClick={() => setToggleNav(false)}
+              className={`w-2/3 uppercase my-4 py-3 px-10 cursor-pointer transition-all ease-in-out hover:bg-primary-2 hover:font-normal hover:text-white ${
+                route.includes('feeds')
+                  ? 'text-base text-primary-2 font-semibold'
+                  : 'font-light text-sm'
+              }`}
+            >
               Feeds
             </li>
           </Link>
           <Link href="/">
-            <li className="text-sm uppercase font-light my-4 py-3 px-10 cursor-pointer transition-all ease-in-out hover:bg-primary-2 hover:font-normal hover:text-white">
+            <li
+              onClick={() => setToggleNav(false)}
+              className={`w-2/3 uppercase my-4 py-3 px-10 cursor-pointer transition-all ease-in-out hover:bg-primary-2 hover:font-normal hover:text-white ${
+                route.includes('resources')
+                  ? 'text-base text-primary-2 font-semibold'
+                  : 'font-light text-sm'
+              }`}
+            >
               Resources
             </li>
           </Link>
