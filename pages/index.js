@@ -45,7 +45,7 @@ export default function Home() {
         <h2 className="text-primary-2 text-xl md:text-2xl uppercase mb-3">
           Our Priests
         </h2>
-        <div className="grid grid-rows-1 md:grid-cols-3 gap-10 md:gap-16">
+        <div className="grid grid-rows-1 lg:grid-cols-3 gap-x-4 gap-y-8 lg:gap-16">
           <div>
             <h4 className="block text-xl font-semibold text-primary tracking-wide">
               Reverend Father Bede Okechukwu Nkamuke
@@ -183,8 +183,8 @@ export default function Home() {
             Mission locations
           </h2>
         </div>
-        <div className="grid grid-rows-1 md:grid-cols-4">
-          <div className="flex flex-col justify-center items-center text-center h-80 px-8 text-white bg-primary">
+        <div className="grid grid-rows-1 md:grid-cols-2 lg:grid-cols-4">
+          <div className="flex flex-col justify-center items-center text-center md:h-80 py-8 px-8 text-white bg-primary">
             <h4 className="mb-4 text-3xl">Lagos</h4>
             <span className="text-lg font-extralight">
               St Patrick Traditional Catholic Chapel, 30 Bola Ademuyiwa Street,
@@ -194,17 +194,18 @@ export default function Home() {
             </span>
           </div>
 
-          <div className="flex flex-col justify-center items-center text-center h-80 px-8 text-primary bg-primary-3">
+          <div className="flex flex-col justify-center items-center text-center md:h-80 py-8 px-8 text-primary bg-primary-3">
             <h4 className="mb-4 text-3xl">Port Harcourt</h4>
             <span className="text-lg font-extralight">
               St Philomena Traditional Catholic Chapel, 8 Orosi Street, Off
               Psychiatry Road, Rumuigbo, Port Harcourt.
               <br />
-              Daily Masses when priest is resident in Port Harcourt
+              Sunday Mass 9am Low Mass or 11am High Mass. Weekday Masses as
+              announced on the weekly Bulletin
             </span>
           </div>
 
-          <div className="flex flex-col justify-center items-center text-center h-80 px-8 text-white bg-primary-2">
+          <div className="flex flex-col justify-center items-center text-center md:h-80 py-8 px-8 text-white bg-primary-2">
             <h4 className="mb-4 text-3xl"> Owerri</h4>
             <span className="text-lg font-extralight">
               St Louis De Montfort Traditional Catholic Chapel 67 Lobo Street
@@ -214,21 +215,21 @@ export default function Home() {
             </span>
           </div>
 
-          <div className="flex flex-col justify-center items-center text-center h-80 px-8 text-white bg-primary-lighter">
+          <div className="flex flex-col justify-center items-center text-center md:h-80 py-8 px-8 text-white bg-primary-lighter">
             <h4 className="mb-4 text-3xl"> Umunze</h4>
             <span className="text-lg font-extralight">
               Masses at a private residence on certain occasions.
             </span>
           </div>
 
-          <div className="flex flex-col justify-center items-center text-center h-80 px-8 text-primary bg-primary-3-dark">
+          <div className="flex flex-col justify-center items-center text-center md:h-80 py-8 px-8 text-primary bg-primary-3-dark">
             <h4 className="mb-4 text-3xl"> Onitsha</h4>
             <span className="text-lg font-extralight">
               Masses at a private residence on certain occasions.
             </span>
           </div>
 
-          <div className="flex flex-col justify-center items-center text-center h-80 px-8 text-white bg-primary">
+          <div className="flex flex-col justify-center items-center text-center md:h-80 py-8 px-8 text-white bg-primary">
             <h4 className="mb-4 text-3xl"> Agenebode</h4>
             <span className="text-lg font-extralight">
               St John Vianney Traditional Catholic Chapel, Ugabi Street, Ewea
@@ -237,42 +238,42 @@ export default function Home() {
             </span>
           </div>
 
-          <div className="flex flex-col justify-center items-center text-center h-80 px-8 text-white bg-primary-2-light">
+          <div className="flex flex-col justify-center items-center text-center md:h-80 py-8 px-8 text-white bg-primary-2-light">
             <h4 className="mb-4 text-3xl"> Enugu</h4>
             <span className="text-lg font-extralight">
               Masses at a private residence on certain occasions.
             </span>
           </div>
 
-          <div className="flex flex-col justify-center items-center text-center h-80 px-8 text-white bg-primary-light">
+          <div className="flex flex-col justify-center items-center text-center md:h-80 py-8 px-8 text-white bg-primary-light">
             <h4 className="mb-4 text-3xl"> Calabar</h4>
             <span className="text-lg font-extralight">
               Masses at a private residence on certain occasions.
             </span>
           </div>
 
-          <div className="flex flex-col justify-center items-center text-center h-80 px-8 text-white bg-primary-2">
+          <div className="flex flex-col justify-center items-center text-center md:h-80 py-8 px-8 text-white bg-primary-2">
             <h4 className="mb-4 text-3xl"> Alifokpa</h4>
             <span className="text-lg font-extralight">
               Masses at a private residence on certain occasions.
             </span>
           </div>
 
-          <div className="flex flex-col justify-center items-center text-center h-80 px-8 text-white bg-primary-lighter">
+          <div className="flex flex-col justify-center items-center text-center md:h-80 py-8 px-8 text-white bg-primary-lighter">
             <h4 className="mb-4 text-3xl"> Boje</h4>
             <span className="text-lg font-extralight">
               Masses at a private residence on certain occasions.
             </span>
           </div>
 
-          <div className="flex flex-col justify-center items-center text-center h-80 px-8 text-white bg-primary">
+          <div className="flex flex-col justify-center items-center text-center md:h-80 py-8 px-8 text-white bg-primary">
             <h4 className="mb-4 text-3xl"> Ogoja</h4>
             <span className="text-lg font-extralight">
               Masses at a private residence on certain occasions.
             </span>
           </div>
 
-          <div className="flex flex-col justify-center items-center text-center h-80 px-8 text-primary bg-primary-3">
+          <div className="flex flex-col justify-center items-center text-center md:h-80 py-8 px-8 text-primary bg-primary-3">
             <h4 className="mb-4 text-3xl"> Abuja</h4>
             <span className="text-lg font-extralight">
               Masses at a private residence on certain occasions.
