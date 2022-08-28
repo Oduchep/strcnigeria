@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import { AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
 import Navbar from './navbar';
+import Link from 'next/link';
 
 const Header = () => {
   const [toggleNav, setToggleNav] = useState(false);
@@ -18,13 +19,15 @@ const Header = () => {
 
         <div className="flex flex-col lg:flex-row items-center justify-between">
           <div className="flex flex-col md:flex-row items-center">
-            <div className="hidden sm:block">
-              <Image
-                src="/strc-nigeria logo.png"
-                width={80}
-                height={80}
-                alt="website logo"
-              />
+            <div className="hidden sm:block cursor-pointer">
+              <Link href="/">
+                <Image
+                  src="/strc-nigeria logo.png"
+                  width={80}
+                  height={80}
+                  alt="website logo"
+                />
+              </Link>
             </div>
 
             <h1 className="ml-0 md:ml-10 mt-5 md:mt-0 uppercase text-white text-center md:text-left text-xl lg:text-2xl font-medium tracking-wider">
