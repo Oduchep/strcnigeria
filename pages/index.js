@@ -200,7 +200,8 @@ export default function Home() {
               St Philomena Traditional Catholic Chapel, 8 Orosi Street, Off
               Psychiatry Road, Rumuigbo, Port Harcourt.
               <br />
-              Daily Masses when priest is resident in Port Harcourt
+              Sunday Mass 9am Low Mass or 11am High Mass. Weekday Masses as
+              announced on the weekly Bulletin
             </span>
           </div>
 

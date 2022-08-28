@@ -8,7 +8,7 @@ const Header = () => {
 
   return (
     <header className="fixed z-10 w-full">
-      <div className="bg-primary px-5 py-5 lg:px-20 lg:py-10">
+      <div className="bg-primary px-5 py-5 lg:px-20">
         <button
           className="block md:hidden h-fit"
           onClick={() => setToggleNav(true)}
@@ -19,7 +19,12 @@ const Header = () => {
         <div className="flex flex-col lg:flex-row items-center justify-between">
           <div className="flex flex-col md:flex-row items-center">
             <div className="hidden sm:block">
-              <Image width={40} height={40} alt="website logo" />
+              <Image
+                src="/strc-nigeria logo.png"
+                width={80}
+                height={80}
+                alt="website logo"
+              />
             </div>
 
             <h1 className="ml-0 md:ml-10 mt-5 md:mt-0 uppercase text-white text-center md:text-left text-xl lg:text-2xl font-medium tracking-wider">
