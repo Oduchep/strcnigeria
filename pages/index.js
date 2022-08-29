@@ -13,17 +13,17 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <section className="bg-hero-pattern bg-cover bg-center bg-no-repeat h-96 md:h-[35rem] relative flex items-center justify-center">
+      <section className="bg-hero-pattern bg-cover bg-center bg-no-repeat h-96 md:h-[38rem] relative flex items-center justify-center">
         <div className="bg-black opacity-50 w-full h-full absolute top-0"></div>
         <div className="relative w-full md:w-2/3 lg:w-1/2 text-center">
-          <h2 className="text-white px-4 text-xl md:text-2xl lg:text-5xl capitalize tracking-wide">
+          <h2 className="text-white px-5 text-xl md:text-2xl lg:text-5xl capitalize tracking-wide">
             Welcome to the website of the Society of Traditional Roman
             Catholics, Nigeria.
           </h2>
         </div>
       </section>
 
-      <section className="mt-5 md:mt-10 px-10 md:px-20 py-5 md:py-10">
+      <section className="mt-5 px-10 md:px-20 py-5 md:py-10">
         <div className="w-full md:w-3/4 mx-auto">
           <p className="text-base md:text-2xl tracking-wide">
             Some people call us sedevacantists because we consider the seat of
