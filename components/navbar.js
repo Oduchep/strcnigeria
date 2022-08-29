@@ -50,7 +50,7 @@ const Navbar = ({ toggleNav, setToggleNav }) => {
       {/* Mobile nav */}
 
       <div
-        className={`bg-white px-6 py-10 w-96 h-full fixed z-50 top-0 transition-all ease-in-out duration-300 ${
+        className={`bg-white px-6 py-10 w-80 sm:w-96 h-full fixed z-50 top-0 transition-all ease-in-out duration-300 ${
           toggleNav ? 'left-0' : '-left-96'
         }`}
       >
