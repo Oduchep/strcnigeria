@@ -17,8 +17,8 @@ module.exports = {
         'primary-3-dark': 'f7f5e1',
       },
       backgroundImage: {
-        'hero-pattern': "url('/assets/images/altar.jpg')",
-        'hero-pattern-2': "url('/assets/images/altar-2.jpg')",
+        'hero-pattern': "url('/assets/images/altar.JPG')",
+        'hero-pattern-2': "url('/assets/images/altar-2.JPG')",
       },
     },
   },

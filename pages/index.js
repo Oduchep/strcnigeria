@@ -15,8 +15,8 @@ export default function Home() {
 
       <section className="bg-hero-pattern bg-cover bg-center bg-no-repeat h-96 md:h-[35rem] relative flex items-center justify-center">
         <div className="bg-black opacity-50 w-full h-full absolute top-0"></div>
-        <div className="relative w-full md:w-1/2 text-center">
-          <h2 className="text-white px-4 text-2xl md:text-5xl capitalize tracking-wide">
+        <div className="relative w-full md:w-2/3 lg:w-1/2 text-center">
+          <h2 className="text-white px-4 text-xl md:text-2xl lg:text-5xl capitalize tracking-wide">
             Welcome to the website of the Society of Traditional Roman
             Catholics, Nigeria.
           </h2>
@@ -25,7 +25,7 @@ export default function Home() {
 
       <section className="mt-5 md:mt-10 px-10 md:px-20 py-5 md:py-10">
         <div className="w-full md:w-3/4 mx-auto">
-          <p className="text-lg md:text-2xl tracking-wide">
+          <p className="text-base md:text-2xl tracking-wide">
             Some people call us sedevacantists because we consider the seat of
             St Peter to be currently vacant (sede vacante) and the Novus Ordo
             hierarchy to be completely devoid of authority; yet we are simply
@@ -45,12 +45,12 @@ export default function Home() {
         <h2 className="text-primary-2 text-xl md:text-2xl uppercase mb-3">
           Our Priests
         </h2>
-        <div className="grid grid-rows-1 lg:grid-cols-3 gap-x-4 gap-y-8 lg:gap-16">
+        <div className="grid grid-rows-1 lg:grid-cols-3 gap-y-8 lg:gap-16">
           <div>
-            <h4 className="block text-xl font-semibold text-primary tracking-wide">
+            <h4 className="block text-lg md:text-xl font-semibold text-primary tracking-wide">
               Reverend Father Bede Okechukwu Nkamuke
             </h4>
-            <p className="text-lg">
+            <p className="text-base md:text-lg">
               Studied at the{' '}
               <a
                 href="http://www.mostholytrinityseminary.org/"
@@ -73,7 +73,7 @@ export default function Home() {
             </p>
             <div className="mt-3">
               <p>
-                <span className="mr-2 text-lg font-semibold text-primary-2">
+                <span className="mr-2 text-base md:text-lg font-semibold text-primary-2">
                   Email:
                 </span>
                 <a href="mailto:FatherNkamuke@strcnigeria.org">
@@ -81,7 +81,7 @@ export default function Home() {
                 </a>
               </p>
               <p>
-                <span className="mr-2 text-lg font-semibold text-primary-2">
+                <span className="mr-2 text-base md:text-lg font-semibold text-primary-2">
                   Phone:
                 </span>
                 <a href="tel:+2349072065991">+234 9072065991</a>
@@ -90,7 +90,7 @@ export default function Home() {
           </div>
 
           <div>
-            <h4 className="block text-xl font-semibold text-primary tracking-wide">
+            <h4 className="block text-lg md:text-xl font-semibold text-primary tracking-wide">
               Reverend Father Ojeka Thomas
             </h4>
             <p className="text-lg">
@@ -133,7 +133,7 @@ export default function Home() {
           </div>
 
           <div>
-            <h4 className="block text-xl font-semibold text-primary tracking-wide">
+            <h4 className="block text-lg md:text-xl font-semibold text-primary tracking-wide">
               Reverend Father Okerulu John
             </h4>
             <p className="text-lg">
@@ -186,7 +186,7 @@ export default function Home() {
         <div className="grid grid-rows-1 md:grid-cols-2 lg:grid-cols-4">
           <div className="flex flex-col justify-center items-center text-center md:h-80 py-8 px-8 text-white bg-primary">
             <h4 className="mb-4 text-3xl">Lagos</h4>
-            <span className="text-lg font-extralight">
+            <span className="text-base md:text-lg font-extralight">
               St Patrick Traditional Catholic Chapel, 30 Bola Ademuyiwa Street,
               Off Osolo Way, Aswani, Lagos.
               <br />
@@ -196,7 +196,7 @@ export default function Home() {
 
           <div className="flex flex-col justify-center items-center text-center md:h-80 py-8 px-8 text-primary bg-primary-3">
             <h4 className="mb-4 text-3xl">Port Harcourt</h4>
-            <span className="text-lg font-extralight">
+            <span className="text-base md:text-lg font-extralight">
               St Philomena Traditional Catholic Chapel, 8 Orosi Street, Off
               Psychiatry Road, Rumuigbo, Port Harcourt.
               <br />
@@ -207,7 +207,7 @@ export default function Home() {
 
           <div className="flex flex-col justify-center items-center text-center md:h-80 py-8 px-8 text-white bg-primary-2">
             <h4 className="mb-4 text-3xl"> Owerri</h4>
-            <span className="text-lg font-extralight">
+            <span className="text-base md:text-lg font-extralight">
               St Louis De Montfort Traditional Catholic Chapel 67 Lobo Street
               Extension, Off Wetheral Junction.
               <br />
@@ -217,21 +217,21 @@ export default function Home() {
 
           <div className="flex flex-col justify-center items-center text-center md:h-80 py-8 px-8 text-white bg-primary-lighter">
             <h4 className="mb-4 text-3xl"> Umunze</h4>
-            <span className="text-lg font-extralight">
+            <span className="text-base md:text-lg font-extralight">
               Masses at a private residence on certain occasions.
             </span>
           </div>
 
           <div className="flex flex-col justify-center items-center text-center md:h-80 py-8 px-8 text-primary bg-primary-3-dark">
             <h4 className="mb-4 text-3xl"> Onitsha</h4>
-            <span className="text-lg font-extralight">
+            <span className="text-base md:text-lg font-extralight">
               Masses at a private residence on certain occasions.
             </span>
           </div>
 
           <div className="flex flex-col justify-center items-center text-center md:h-80 py-8 px-8 text-white bg-primary">
             <h4 className="mb-4 text-3xl"> Agenebode</h4>
-            <span className="text-lg font-extralight">
+            <span className="text-base md:text-lg font-extralight">
               St John Vianney Traditional Catholic Chapel, Ugabi Street, Ewea
               Quarters, Agenebode <br />
               Masses only on certain occasions.
@@ -240,42 +240,42 @@ export default function Home() {
 
           <div className="flex flex-col justify-center items-center text-center md:h-80 py-8 px-8 text-white bg-primary-2-light">
             <h4 className="mb-4 text-3xl"> Enugu</h4>
-            <span className="text-lg font-extralight">
+            <span className="text-base md:text-lg font-extralight">
               Masses at a private residence on certain occasions.
             </span>
           </div>
 
           <div className="flex flex-col justify-center items-center text-center md:h-80 py-8 px-8 text-white bg-primary-light">
             <h4 className="mb-4 text-3xl"> Calabar</h4>
-            <span className="text-lg font-extralight">
+            <span className="text-base md:text-lg font-extralight">
               Masses at a private residence on certain occasions.
             </span>
           </div>
 
           <div className="flex flex-col justify-center items-center text-center md:h-80 py-8 px-8 text-white bg-primary-2">
             <h4 className="mb-4 text-3xl"> Alifokpa</h4>
-            <span className="text-lg font-extralight">
+            <span className="text-base md:text-lg font-extralight">
               Masses at a private residence on certain occasions.
             </span>
           </div>
 
           <div className="flex flex-col justify-center items-center text-center md:h-80 py-8 px-8 text-white bg-primary-lighter">
             <h4 className="mb-4 text-3xl"> Boje</h4>
-            <span className="text-lg font-extralight">
+            <span className="text-base md:text-lg font-extralight">
               Masses at a private residence on certain occasions.
             </span>
           </div>
 
           <div className="flex flex-col justify-center items-center text-center md:h-80 py-8 px-8 text-white bg-primary">
             <h4 className="mb-4 text-3xl"> Ogoja</h4>
-            <span className="text-lg font-extralight">
+            <span className="text-base md:text-lg font-extralight">
               Masses at a private residence on certain occasions.
             </span>
           </div>
 
           <div className="flex flex-col justify-center items-center text-center md:h-80 py-8 px-8 text-primary bg-primary-3">
             <h4 className="mb-4 text-3xl"> Abuja</h4>
-            <span className="text-lg font-extralight">
+            <span className="text-base md:text-lg font-extralight">
               Masses at a private residence on certain occasions.
             </span>
           </div>
