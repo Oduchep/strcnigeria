@@ -22,8 +22,8 @@ const Header = () => {
             <div className="hidden sm:block cursor-pointer">
               <Link href="/">
                 <Image
-                  src="/strc-nigeria logo.png"
-                  width={80}
+                  src="/strc-nigeria logo_white.PNG"
+                  width={100}
                   height={80}
                   alt="website logo"
                 />
