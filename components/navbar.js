@@ -8,10 +8,10 @@ const Navbar = ({ toggleNav, setToggleNav }) => {
   return (
     <nav className="bg-white border">
       {/* Desktop nav */}
-      <ul className="hidden justify-center md:flex">
+      <ul className="hidden md:flex justify-center items-center overflow-x-auto w-full">
         <Link href="/">
           <li
-            className={`text-xs uppercase font-light py-5 px-10 cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white mx-2 ${
+            className={`text-xs uppercase font-light py-5 px-5 whitespace-nowrap cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white mx-2 ${
               route === '/' ? 'bg-primary-2' : 'bg-white'
             }`}
           >
@@ -20,7 +20,7 @@ const Navbar = ({ toggleNav, setToggleNav }) => {
         </Link>
         <Link href="/about-us">
           <li
-            className={`text-xs uppercase font-light py-5 px-10 cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white mx-2 ${
+            className={`text-xs uppercase font-light py-5 px-5 whitespace-nowrap cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white mx-2 ${
               route.includes('about-us') ? 'bg-primary-2' : 'bg-white'
             }`}
           >
@@ -29,20 +29,70 @@ const Navbar = ({ toggleNav, setToggleNav }) => {
         </Link>
         <Link href="/">
           <li
-            className={`text-xs uppercase font-light py-5 px-10 cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white mx-2 ${
+            className={`text-xs uppercase font-light py-5 px-5 whitespace-nowrap cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white mx-2 ${
               route.includes('feeds') ? 'bg-primary-2' : 'bg-white'
             }`}
           >
             Feeds
           </li>
         </Link>
+        <li
+          className={`text-xs uppercase font-light py-5 px-5 whitespace-nowrap cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white mx-2`}
+        >
+          Our Priests
+        </li>
+        <li
+          className={`text-xs uppercase font-light py-5 px-5 whitespace-nowrap cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white mx-2`}
+        >
+          Mass Centers
+        </li>
         <Link href="/">
           <li
-            className={`text-xs uppercase font-light py-5 px-10 cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white mx-2 ${
-              route.includes('resources') ? 'bg-primary-2' : 'bg-white'
+            className={`text-xs uppercase font-light py-5 px-5 whitespace-nowrap cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white mx-2 ${
+              route.includes('articles') ? 'bg-primary-2' : 'bg-white'
             }`}
           >
-            Resources
+            Articles
+          </li>
+        </Link>
+
+        <Link href="/">
+          <li
+            className={`text-xs uppercase font-light py-5 px-5 whitespace-nowrap cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white mx-2 ${
+              route.includes('newsletter') ? 'bg-primary-2' : 'bg-white'
+            }`}
+          >
+            Newsletter
+          </li>
+        </Link>
+
+        <Link href="/">
+          <li
+            className={`text-xs uppercase font-light py-5 px-5 whitespace-nowrap cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white mx-2 ${
+              route.includes('bulletin') ? 'bg-primary-2' : 'bg-white'
+            }`}
+          >
+            Bulletin
+          </li>
+        </Link>
+
+        <Link href="/">
+          <li
+            className={`text-xs uppercase font-light py-5 px-5 whitespace-nowrap cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white mx-2 ${
+              route.includes('seminary') ? 'bg-primary-2' : 'bg-white'
+            }`}
+          >
+            Seminary
+          </li>
+        </Link>
+
+        <Link href="/">
+          <li
+            className={`text-xs uppercase font-light py-5 px-5 whitespace-nowrap cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white mx-2 ${
+              route.includes('religious-vocation') ? 'bg-primary-2' : 'bg-white'
+            }`}
+          >
+            Religious Vocation
           </li>
         </Link>
       </ul>
@@ -62,7 +112,7 @@ const Navbar = ({ toggleNav, setToggleNav }) => {
           <Link href="/">
             <li
               onClick={() => setToggleNav(false)}
-              className={`w-2/3 uppercase my-4 py-3 px-10 cursor-pointer transition-all ease-in-out hover:bg-primary-2 hover:font-normal hover:text-white ${
+              className={`uppercase py-3 px-10 cursor-pointer transition-all ease-in-out hover:bg-primary-2 hover:font-normal hover:text-white ${
                 route === '/'
                   ? 'text-base text-primary-2 font-semibold'
                   : 'font-light text-sm'
@@ -74,7 +124,7 @@ const Navbar = ({ toggleNav, setToggleNav }) => {
           <Link href="/about-us">
             <li
               onClick={() => setToggleNav(false)}
-              className={`w-2/3 uppercase my-4 py-3 px-10 cursor-pointer transition-all ease-in-out hover:bg-primary-2 hover:font-normal hover:text-white ${
+              className={`uppercase py-3 px-10 cursor-pointer transition-all ease-in-out hover:bg-primary-2 hover:font-normal hover:text-white ${
                 route.includes('about-us')
                   ? 'text-base text-primary-2 font-semibold'
                   : 'font-light text-sm'
@@ -86,7 +136,7 @@ const Navbar = ({ toggleNav, setToggleNav }) => {
           <Link href="/">
             <li
               onClick={() => setToggleNav(false)}
-              className={`w-2/3 uppercase my-4 py-3 px-10 cursor-pointer transition-all ease-in-out hover:bg-primary-2 hover:font-normal hover:text-white ${
+              className={`uppercase py-3 px-10 cursor-pointer transition-all ease-in-out hover:bg-primary-2 hover:font-normal hover:text-white ${
                 route.includes('feeds')
                   ? 'text-base text-primary-2 font-semibold'
                   : 'font-light text-sm'
@@ -98,13 +148,91 @@ const Navbar = ({ toggleNav, setToggleNav }) => {
           <Link href="/">
             <li
               onClick={() => setToggleNav(false)}
-              className={`w-2/3 uppercase my-4 py-3 px-10 cursor-pointer transition-all ease-in-out hover:bg-primary-2 hover:font-normal hover:text-white ${
+              className={`uppercase py-3 px-10 cursor-pointer transition-all ease-in-out hover:bg-primary-2 hover:font-normal hover:text-white ${
                 route.includes('resources')
                   ? 'text-base text-primary-2 font-semibold'
                   : 'font-light text-sm'
               }`}
             >
-              Resources
+              Our Priests
+            </li>
+          </Link>
+
+          <Link href="/">
+            <li
+              onClick={() => setToggleNav(false)}
+              className={`uppercase py-3 px-10 cursor-pointer transition-all ease-in-out hover:bg-primary-2 hover:font-normal hover:text-white ${
+                route.includes('resources')
+                  ? 'text-base text-primary-2 font-semibold'
+                  : 'font-light text-sm'
+              }`}
+            >
+              Mass Centers
+            </li>
+          </Link>
+
+          <Link href="/">
+            <li
+              onClick={() => setToggleNav(false)}
+              className={`uppercase py-3 px-10 cursor-pointer transition-all ease-in-out hover:bg-primary-2 hover:font-normal hover:text-white ${
+                route.includes('resources')
+                  ? 'text-base text-primary-2 font-semibold'
+                  : 'font-light text-sm'
+              }`}
+            >
+              Articles
+            </li>
+          </Link>
+
+          <Link href="/">
+            <li
+              onClick={() => setToggleNav(false)}
+              className={`uppercase py-3 px-10 cursor-pointer transition-all ease-in-out hover:bg-primary-2 hover:font-normal hover:text-white ${
+                route.includes('resources')
+                  ? 'text-base text-primary-2 font-semibold'
+                  : 'font-light text-sm'
+              }`}
+            >
+              Newsletter
+            </li>
+          </Link>
+
+          <Link href="/">
+            <li
+              onClick={() => setToggleNav(false)}
+              className={`uppercase py-3 px-10 cursor-pointer transition-all ease-in-out hover:bg-primary-2 hover:font-normal hover:text-white ${
+                route.includes('resources')
+                  ? 'text-base text-primary-2 font-semibold'
+                  : 'font-light text-sm'
+              }`}
+            >
+              Bulletin
+            </li>
+          </Link>
+
+          <Link href="/">
+            <li
+              onClick={() => setToggleNav(false)}
+              className={`uppercase py-3 px-10 cursor-pointer transition-all ease-in-out hover:bg-primary-2 hover:font-normal hover:text-white ${
+                route.includes('resources')
+                  ? 'text-base text-primary-2 font-semibold'
+                  : 'font-light text-sm'
+              }`}
+            >
+              Seminary
+            </li>
+          </Link>
+
+          <Link href="/">
+            <li
+              onClick={() => setToggleNav(false)}
+              className={`uppercase py-3 px-10 cursor-pointer transition-all ease-in-out hover:bg-primary-2 hover:font-normal hover:text-white ${
+                route.includes('resources')
+                  ? 'text-base text-primary-2 font-semibold'
+                  : 'font-light text-sm'
+              }`}
+            >
+              Religious Vocation
             </li>
           </Link>
         </ul>
