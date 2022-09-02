@@ -8,94 +8,94 @@ const Navbar = ({ toggleNav, setToggleNav }) => {
   return (
     <nav className="bg-white border">
       {/* Desktop nav */}
-      <ul className="hidden md:flex justify-center items-center overflow-x-auto w-full">
+      <div className="hidden md:flex justify-center items-center overflow-x-auto w-full">
         <Link href="/">
-          <li
+          <a
             className={`text-xs uppercase font-light py-5 px-5 whitespace-nowrap cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white mx-2 ${
               route === '/' ? 'bg-primary-2' : 'bg-white'
             }`}
           >
             Home
-          </li>
+          </a>
         </Link>
         <Link href="/about-us">
-          <li
+          <a
             className={`text-xs uppercase font-light py-5 px-5 whitespace-nowrap cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white mx-2 ${
               route.includes('about-us') ? 'bg-primary-2' : 'bg-white'
             }`}
           >
             About Us
-          </li>
+          </a>
         </Link>
         <Link href="/">
-          <li
+          <a
             className={`text-xs uppercase font-light py-5 px-5 whitespace-nowrap cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white mx-2 ${
               route.includes('feeds') ? 'bg-primary-2' : 'bg-white'
             }`}
           >
             Feeds
-          </li>
+          </a>
         </Link>
-        <li
+        <a
           className={`text-xs uppercase font-light py-5 px-5 whitespace-nowrap cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white mx-2`}
         >
           Our Priests
-        </li>
-        <li
+        </a>
+        <a
           className={`text-xs uppercase font-light py-5 px-5 whitespace-nowrap cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white mx-2`}
         >
           Mass Centers
-        </li>
+        </a>
         <Link href="/">
-          <li
+          <a
             className={`text-xs uppercase font-light py-5 px-5 whitespace-nowrap cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white mx-2 ${
               route.includes('articles') ? 'bg-primary-2' : 'bg-white'
             }`}
           >
             Articles
-          </li>
+          </a>
         </Link>
 
         <Link href="/">
-          <li
+          <a
             className={`text-xs uppercase font-light py-5 px-5 whitespace-nowrap cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white mx-2 ${
               route.includes('newsletter') ? 'bg-primary-2' : 'bg-white'
             }`}
           >
             Newsletter
-          </li>
+          </a>
         </Link>
 
         <Link href="/">
-          <li
+          <a
             className={`text-xs uppercase font-light py-5 px-5 whitespace-nowrap cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white mx-2 ${
               route.includes('bulletin') ? 'bg-primary-2' : 'bg-white'
             }`}
           >
             Bulletin
-          </li>
+          </a>
         </Link>
 
         <Link href="/">
-          <li
+          <a
             className={`text-xs uppercase font-light py-5 px-5 whitespace-nowrap cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white mx-2 ${
               route.includes('seminary') ? 'bg-primary-2' : 'bg-white'
             }`}
           >
             Seminary
-          </li>
+          </a>
         </Link>
 
         <Link href="/">
-          <li
+          <a
             className={`text-xs uppercase font-light py-5 px-5 whitespace-nowrap cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white mx-2 ${
               route.includes('religious-vocation') ? 'bg-primary-2' : 'bg-white'
             }`}
           >
             Religious Vocation
-          </li>
+          </a>
         </Link>
-      </ul>
+      </div>
 
       {/* Mobile nav */}
 
@@ -108,9 +108,9 @@ const Navbar = ({ toggleNav, setToggleNav }) => {
           <AiOutlineClose className="text-3xl" />
         </button>
 
-        <ul className="mt-20 bg-white">
+        <div className="mt-20 bg-white flex flex-col">
           <Link href="/">
-            <li
+            <a
               onClick={() => setToggleNav(false)}
               className={`uppercase py-3 px-10 cursor-pointer transition-all ease-in-out hover:bg-primary-2 hover:font-normal hover:text-white ${
                 route === '/'
@@ -119,10 +119,10 @@ const Navbar = ({ toggleNav, setToggleNav }) => {
               }`}
             >
               Home
-            </li>
+            </a>
           </Link>
           <Link href="/about-us">
-            <li
+            <a
               onClick={() => setToggleNav(false)}
               className={`uppercase py-3 px-10 cursor-pointer transition-all ease-in-out hover:bg-primary-2 hover:font-normal hover:text-white ${
                 route.includes('about-us')
@@ -131,10 +131,10 @@ const Navbar = ({ toggleNav, setToggleNav }) => {
               }`}
             >
               About Us
-            </li>
+            </a>
           </Link>
           <Link href="/">
-            <li
+            <a
               onClick={() => setToggleNav(false)}
               className={`uppercase py-3 px-10 cursor-pointer transition-all ease-in-out hover:bg-primary-2 hover:font-normal hover:text-white ${
                 route.includes('feeds')
@@ -143,10 +143,10 @@ const Navbar = ({ toggleNav, setToggleNav }) => {
               }`}
             >
               Feeds
-            </li>
+            </a>
           </Link>
           <Link href="/">
-            <li
+            <a
               onClick={() => setToggleNav(false)}
               className={`uppercase py-3 px-10 cursor-pointer transition-all ease-in-out hover:bg-primary-2 hover:font-normal hover:text-white ${
                 route.includes('resources')
@@ -155,11 +155,11 @@ const Navbar = ({ toggleNav, setToggleNav }) => {
               }`}
             >
               Our Priests
-            </li>
+            </a>
           </Link>
 
           <Link href="/">
-            <li
+            <a
               onClick={() => setToggleNav(false)}
               className={`uppercase py-3 px-10 cursor-pointer transition-all ease-in-out hover:bg-primary-2 hover:font-normal hover:text-white ${
                 route.includes('resources')
@@ -168,11 +168,11 @@ const Navbar = ({ toggleNav, setToggleNav }) => {
               }`}
             >
               Mass Centers
-            </li>
+            </a>
           </Link>
 
           <Link href="/">
-            <li
+            <a
               onClick={() => setToggleNav(false)}
               className={`uppercase py-3 px-10 cursor-pointer transition-all ease-in-out hover:bg-primary-2 hover:font-normal hover:text-white ${
                 route.includes('resources')
@@ -181,11 +181,11 @@ const Navbar = ({ toggleNav, setToggleNav }) => {
               }`}
             >
               Articles
-            </li>
+            </a>
           </Link>
 
           <Link href="/">
-            <li
+            <a
               onClick={() => setToggleNav(false)}
               className={`uppercase py-3 px-10 cursor-pointer transition-all ease-in-out hover:bg-primary-2 hover:font-normal hover:text-white ${
                 route.includes('resources')
@@ -194,11 +194,11 @@ const Navbar = ({ toggleNav, setToggleNav }) => {
               }`}
             >
               Newsletter
-            </li>
+            </a>
           </Link>
 
           <Link href="/">
-            <li
+            <a
               onClick={() => setToggleNav(false)}
               className={`uppercase py-3 px-10 cursor-pointer transition-all ease-in-out hover:bg-primary-2 hover:font-normal hover:text-white ${
                 route.includes('resources')
@@ -207,11 +207,11 @@ const Navbar = ({ toggleNav, setToggleNav }) => {
               }`}
             >
               Bulletin
-            </li>
+            </a>
           </Link>
 
           <Link href="/">
-            <li
+            <a
               onClick={() => setToggleNav(false)}
               className={`uppercase py-3 px-10 cursor-pointer transition-all ease-in-out hover:bg-primary-2 hover:font-normal hover:text-white ${
                 route.includes('resources')
@@ -220,11 +220,11 @@ const Navbar = ({ toggleNav, setToggleNav }) => {
               }`}
             >
               Seminary
-            </li>
+            </a>
           </Link>
 
           <Link href="/">
-            <li
+            <a
               onClick={() => setToggleNav(false)}
               className={`uppercase py-3 px-10 cursor-pointer transition-all ease-in-out hover:bg-primary-2 hover:font-normal hover:text-white ${
                 route.includes('resources')
@@ -233,9 +233,9 @@ const Navbar = ({ toggleNav, setToggleNav }) => {
               }`}
             >
               Religious Vocation
-            </li>
+            </a>
           </Link>
-        </ul>
+        </div>
       </div>
       {/* Overlay for mobile nav */}
       {toggleNav && (
