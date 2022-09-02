@@ -22,9 +22,9 @@ const Footer = () => {
           </div>
         </div>
 
-        <ul className="col-span-3 flex flex-col">
+        <div className="col-span-3 flex flex-col">
           <Link href="/privacy-policy">
-            <li
+            <a
               className={`font-normal text-base cursor-pointer transition-all ease-in-out duration-150 hover:text-primary-2-light hover:font-medium hover:text-[17px] mb-2 ${
                 route === '/privacy-policy'
                   ? 'text-primary-3-dark'
@@ -32,29 +32,29 @@ const Footer = () => {
               }`}
             >
               Privacy Policy
-            </li>
+            </a>
           </Link>
 
           <Link href="/disclaimer">
-            <li
+            <a
               className={`font-normal text-base cursor-pointer transition-all ease-in-out duration-150 hover:text-primary-2-light hover:font-medium hover:text-[17px] mb-2 ${
                 route === '/disclaimer' ? 'text-primary-3-dark' : 'text-white'
               }`}
             >
               Disclaimer
-            </li>
+            </a>
           </Link>
 
           <Link href="/terms-of-use">
-            <li
+            <a
               className={`font-normal text-base cursor-pointer transition-all ease-in-out duration-150 hover:text-primary-2-light hover:font-medium hover:text-[17px] mb-2 ${
                 route === '/terms-of-use' ? 'text-primary-3-dark' : 'text-white'
               }`}
             >
               Terms of Use
-            </li>
+            </a>
           </Link>
-        </ul>
+        </div>
 
         <div className="">
           <a
