@@ -23,7 +23,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mt-5 px-10 md:px-20 py-5 md:py-10">
+      <section className="mt-5 main-container">
         <div className="w-full md:w-3/4 mx-auto">
           <p className="text-base md:text-2xl tracking-wide">
             Some people call us sedevacantists because we consider the seat of
@@ -41,7 +41,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-10 md:px-20 py-5 md:py-10">
+      <section className="main-container">
         <h2 className="text-primary-2 text-xl md:text-2xl uppercase mb-3">
           Our Priests
         </h2>
@@ -178,7 +178,7 @@ export default function Home() {
       </section>
 
       <section>
-        <div className="px-10 md:px-20 py-5 md:py-10">
+        <div className="main-container">
           <h2 className="text-primary-2 text-xl md:text-2xl uppercase">
             Mission locations
           </h2>
