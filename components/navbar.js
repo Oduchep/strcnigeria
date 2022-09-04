@@ -1,14 +1,15 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { AiOutlineClose } from 'react-icons/ai';
+import MobileMenu from './mobile-menu';
+import SubmenuLink from './submenu-link';
 
 const Navbar = ({ toggleNav, setToggleNav }) => {
   const { route } = useRouter();
 
   return (
-    <nav className="bg-white border">
+    <nav className="bg-white border relative">
       {/* Desktop nav */}
-      <div className="hidden md:flex justify-center items-center overflow-x-auto w-full">
+      <div className="hidden md:flex xl:justify-center items-center overflow-x-auto w-full">
         <Link href="/">
           <a
             className={`text-xs uppercase font-light py-5 px-5 whitespace-nowrap cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white mx-2 ${
@@ -36,25 +37,55 @@ const Navbar = ({ toggleNav, setToggleNav }) => {
             Feeds
           </a>
         </Link>
-        <a
-          className={`text-xs uppercase font-light py-5 px-5 whitespace-nowrap cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white mx-2`}
+        <div
+          className={`group text-xs uppercase font-light  transition-all ease-in-out duration-150 mx-2`}
         >
-          Our Priests
-        </a>
-        <a
-          className={`text-xs uppercase font-light py-5 px-5 whitespace-nowrap cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white mx-2`}
+          <p className="py-5 px-5 whitespace-nowrap">Our Priests</p>
+          <div className="bg-primary-2 flex flex-col absolute invisible group-hover:visible top-14 opacity-100 z-50 min-w-[150px]">
+            <SubmenuLink href="/" text="Nkamuke Bede" />
+            <SubmenuLink href="/" text="Okerulu John" />
+            <SubmenuLink href="/" text="Ojeka Thomas" />
+          </div>
+        </div>
+        <div
+          className={`group text-xs uppercase font-light  transition-all ease-in-out duration-150 mx-2`}
         >
-          Mass Centers
-        </a>
-        <Link href="/">
-          <a
-            className={`text-xs uppercase font-light py-5 px-5 whitespace-nowrap cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white mx-2 ${
-              route.includes('articles') ? 'bg-primary-2' : 'bg-white'
-            }`}
-          >
-            Articles
-          </a>
-        </Link>
+          <p className="whitespace-nowrap py-5 px-5">Mass Centers</p>
+          <div className="bg-primary-2 flex flex-col absolute invisible group-hover:visible top-14 opacity-100 z-50 min-w-[150px]">
+            <SubmenuLink href="/" text="abuja mission" />
+            <SubmenuLink href="/" text="alifokpa mission" />
+            <SubmenuLink href="/" text="benue mission" />
+            <SubmenuLink href="/" text="bode mission" />
+            <SubmenuLink href="/" text="calabar mission" />
+            <SubmenuLink href="/" text="lagos mission" />
+            <SubmenuLink href="/" text="onitsha mission" />
+            <SubmenuLink href="/" text="owerri mission" />
+            <SubmenuLink href="/" text="port harcourt mission" />
+            <SubmenuLink href="/" text="umunze mission" />
+          </div>
+        </div>
+        <div className="group text-xs uppercase font-light mx-2">
+          <Link href="/">
+            <a
+              className={`text-xs uppercase font-light py-5 px-5 whitespace-nowrap cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white ${
+                route.includes('articles') ? 'bg-primary-2' : 'bg-white'
+              }`}
+            >
+              Articles
+            </a>
+          </Link>
+
+          <div className="bg-primary-2 flex flex-col absolute invisible group-hover:visible top-14 opacity-100 z-50 min-w-[150px]">
+            <a
+              className="p-3 hover:bg-primary-3 hover:text-primary"
+              href="http://traditionalmass.org/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Traditional latin mass
+            </a>
+          </div>
+        </div>
 
         <Link href="/">
           <a
@@ -95,155 +126,20 @@ const Navbar = ({ toggleNav, setToggleNav }) => {
             Religious Vocation
           </a>
         </Link>
+
+        <Link href="/">
+          <a
+            className={`text-xs uppercase font-light py-5 px-5 whitespace-nowrap cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white mx-2 ${
+              route.includes('religious-vocation') ? 'bg-primary-2' : 'bg-white'
+            }`}
+          >
+            Support us
+          </a>
+        </Link>
       </div>
 
       {/* Mobile nav */}
-
-      <div
-        className={`bg-white px-6 py-10 w-80 sm:w-96 h-full fixed z-50 top-0 transition-all ease-in-out duration-300 ${
-          toggleNav ? 'left-0' : '-left-96'
-        }`}
-      >
-        <button className="float-right" onClick={() => setToggleNav(false)}>
-          <AiOutlineClose className="text-3xl" />
-        </button>
-
-        <div className="mt-20 bg-white flex flex-col">
-          <Link href="/">
-            <a
-              onClick={() => setToggleNav(false)}
-              className={`uppercase py-3 px-10 cursor-pointer transition-all ease-in-out hover:bg-primary-2 hover:font-normal hover:text-white ${
-                route === '/'
-                  ? 'text-base text-primary-2 font-semibold'
-                  : 'font-light text-sm'
-              }`}
-            >
-              Home
-            </a>
-          </Link>
-          <Link href="/about-us">
-            <a
-              onClick={() => setToggleNav(false)}
-              className={`uppercase py-3 px-10 cursor-pointer transition-all ease-in-out hover:bg-primary-2 hover:font-normal hover:text-white ${
-                route.includes('about-us')
-                  ? 'text-base text-primary-2 font-semibold'
-                  : 'font-light text-sm'
-              }`}
-            >
-              About Us
-            </a>
-          </Link>
-          <Link href="/">
-            <a
-              onClick={() => setToggleNav(false)}
-              className={`uppercase py-3 px-10 cursor-pointer transition-all ease-in-out hover:bg-primary-2 hover:font-normal hover:text-white ${
-                route.includes('feeds')
-                  ? 'text-base text-primary-2 font-semibold'
-                  : 'font-light text-sm'
-              }`}
-            >
-              Feeds
-            </a>
-          </Link>
-          <Link href="/">
-            <a
-              onClick={() => setToggleNav(false)}
-              className={`uppercase py-3 px-10 cursor-pointer transition-all ease-in-out hover:bg-primary-2 hover:font-normal hover:text-white ${
-                route.includes('resources')
-                  ? 'text-base text-primary-2 font-semibold'
-                  : 'font-light text-sm'
-              }`}
-            >
-              Our Priests
-            </a>
-          </Link>
-
-          <Link href="/">
-            <a
-              onClick={() => setToggleNav(false)}
-              className={`uppercase py-3 px-10 cursor-pointer transition-all ease-in-out hover:bg-primary-2 hover:font-normal hover:text-white ${
-                route.includes('resources')
-                  ? 'text-base text-primary-2 font-semibold'
-                  : 'font-light text-sm'
-              }`}
-            >
-              Mass Centers
-            </a>
-          </Link>
-
-          <Link href="/">
-            <a
-              onClick={() => setToggleNav(false)}
-              className={`uppercase py-3 px-10 cursor-pointer transition-all ease-in-out hover:bg-primary-2 hover:font-normal hover:text-white ${
-                route.includes('resources')
-                  ? 'text-base text-primary-2 font-semibold'
-                  : 'font-light text-sm'
-              }`}
-            >
-              Articles
-            </a>
-          </Link>
-
-          <Link href="/">
-            <a
-              onClick={() => setToggleNav(false)}
-              className={`uppercase py-3 px-10 cursor-pointer transition-all ease-in-out hover:bg-primary-2 hover:font-normal hover:text-white ${
-                route.includes('resources')
-                  ? 'text-base text-primary-2 font-semibold'
-                  : 'font-light text-sm'
-              }`}
-            >
-              Newsletter
-            </a>
-          </Link>
-
-          <Link href="/">
-            <a
-              onClick={() => setToggleNav(false)}
-              className={`uppercase py-3 px-10 cursor-pointer transition-all ease-in-out hover:bg-primary-2 hover:font-normal hover:text-white ${
-                route.includes('resources')
-                  ? 'text-base text-primary-2 font-semibold'
-                  : 'font-light text-sm'
-              }`}
-            >
-              Bulletin
-            </a>
-          </Link>
-
-          <Link href="/">
-            <a
-              onClick={() => setToggleNav(false)}
-              className={`uppercase py-3 px-10 cursor-pointer transition-all ease-in-out hover:bg-primary-2 hover:font-normal hover:text-white ${
-                route.includes('resources')
-                  ? 'text-base text-primary-2 font-semibold'
-                  : 'font-light text-sm'
-              }`}
-            >
-              Seminary
-            </a>
-          </Link>
-
-          <Link href="/">
-            <a
-              onClick={() => setToggleNav(false)}
-              className={`uppercase py-3 px-10 cursor-pointer transition-all ease-in-out hover:bg-primary-2 hover:font-normal hover:text-white ${
-                route.includes('resources')
-                  ? 'text-base text-primary-2 font-semibold'
-                  : 'font-light text-sm'
-              }`}
-            >
-              Religious Vocation
-            </a>
-          </Link>
-        </div>
-      </div>
-      {/* Overlay for mobile nav */}
-      {toggleNav && (
-        <div
-          onClick={() => setToggleNav(true)}
-          className="fixed z-10 bg-slate-800 opacity-60 h-full w-full top-0"
-        ></div>
-      )}
+      <MobileMenu toggleNav={toggleNav} setToggleNav={setToggleNav} />
     </nav>
   );
 };
