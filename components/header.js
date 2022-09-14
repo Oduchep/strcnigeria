@@ -8,7 +8,7 @@ const Header = () => {
   const [toggleNav, setToggleNav] = useState(false);
 
   return (
-    <header className="fixed z-10 w-full">
+    <header className="fixed z-20 w-full">
       <div className="bg-primary px-5 py-5 lg:px-20">
         <button
           className="block md:hidden h-fit"
