@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import { FaFacebookSquare } from 'react-icons/fa';
+import { ImWhatsapp } from 'react-icons/im';
 
 const Bode = () => {
   return (
@@ -221,6 +223,35 @@ const Bode = () => {
                 <span className="font-bold text-primary">Friday:</span> Sacred
                 Heart Devotion 4pm
               </p>
+            </div>
+          </div>
+          <div className="mb-10 shadow-lg shadow-primary-light/30">
+            <h3 className="uppercase text-center text-white text-lg p-3 bg-primary-2">
+              socials
+            </h3>
+            <div className="p-5">
+              <a
+                href="https://www.facebook.com/St-John-Vianney-Traditional-Roman-Catholic-Church-Agenebode-2318388185041432/"
+                target="_blank"
+                className="flex items-center mb-3"
+                rel="noreferrer"
+              >
+                <span className="mr-2 text-3xl text-[#4267B2]">
+                  <FaFacebookSquare />
+                </span>
+                <span> Facebook</span>
+              </a>
+              <a
+                href="https://wa.me/9072065991"
+                target="_blank"
+                className="flex items-center"
+                rel="noreferrer"
+              >
+                <span className="mr-2 text-3xl text-[#25D366]">
+                  <ImWhatsapp />
+                </span>
+                <span> Whatsapp</span>
+              </a>
             </div>
           </div>
         </div>
