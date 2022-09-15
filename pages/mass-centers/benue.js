@@ -18,7 +18,7 @@ const Benue = () => {
         </div>
       </section>
 
-      <section className="main-container grid lg:grid-cols-3 gap-16">
+      <section className="main-container grid lg:grid-cols-3 gap-y-8 gap-x-32">
         <div className="order-2 lg:order-1 col-span-3 lg:col-span-2">
           <div>
             <h3 className="capitalize text-center text-primary text-2xl md:text-4xl mb-8">
