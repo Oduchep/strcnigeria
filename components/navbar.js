@@ -53,22 +53,31 @@ const Navbar = ({ toggleNav, setToggleNav }) => {
         >
           <p className="whitespace-nowrap py-5 px-5">Mass Centers</p>
           <div className="bg-primary-2 flex flex-col absolute invisible group-hover:visible top-14 opacity-100 z-50 min-w-[150px]">
-            <SubmenuLink href={Routes.ABUJA_MISSION} text="abuja mission" />
-            <SubmenuLink
-              href={Routes.ALIFOKPA_MISSION}
-              text="alifokpa mission"
-            />
-            <SubmenuLink href={Routes.BENUE_MISSION} text="benue mission" />
-            <SubmenuLink href={Routes.BODE_MISSION} text="bode mission" />
-            <SubmenuLink href={Routes.CALABAR_MISSION} text="calabar mission" />
-            <SubmenuLink href={Routes.LAGOS_MISSION} text="lagos mission" />
-            <SubmenuLink href={Routes.ONITSHA_MISSION} text="onitsha mission" />
-            <SubmenuLink href={Routes.OWERRI_MISSION} text="owerri mission" />
             <SubmenuLink
               href={Routes.PORT_HARCOURT_MISSION}
               text="port harcourt mission"
             />
+
+            <SubmenuLink href={Routes.OWERRI_MISSION} text="owerri mission" />
+
+            <SubmenuLink href={Routes.LAGOS_MISSION} text="lagos mission" />
+
             <SubmenuLink href={Routes.UMUNZE_MISSION} text="umunze mission" />
+
+            <SubmenuLink href={Routes.ABUJA_MISSION} text="abuja mission" />
+
+            <SubmenuLink href={Routes.BENUE_MISSION} text="benue mission" />
+
+            <SubmenuLink
+              href={Routes.ALIFOKPA_MISSION}
+              text="alifokpa mission"
+            />
+
+            <SubmenuLink href={Routes.BODE_MISSION} text="bode mission" />
+
+            <SubmenuLink href={Routes.CALABAR_MISSION} text="calabar mission" />
+
+            <SubmenuLink href={Routes.ONITSHA_MISSION} text="onitsha mission" />
           </div>
         </div>
         <div className="group text-xs uppercase font-light mx-2">
