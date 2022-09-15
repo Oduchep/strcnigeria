@@ -4,7 +4,7 @@ import React from 'react';
 const Benue = () => {
   return (
     <>
-      <section className="bg-[url('https://res.cloudinary.com/strcnigeria/image/upload/v1663186418/cld-sample.jpg')] h-80 md:h-[28rem] bg-cover bg-center bg-no-repeat relative">
+      <section className="bg-[url('https://res.cloudinary.com/strcnigeria/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1663225347/Mass%20Centers/Benue%20Mission/IMG-20220803-WA0018_ndiwpa.jpg')] h-80 md:h-[28rem] bg-cover bg-top bg-no-repeat relative">
         <div className="opacity-50 w-full h-full absolute top-0 bg-primary-2"></div>
         <div className="bg-gradient-to-l from-primary flex items-center justify-center md:justify-end h-full relative z-10">
           <div className="p-5 md:p-40">
@@ -37,49 +37,53 @@ const Benue = () => {
             </p>
           </div>
 
-          <div className="mt-10 grid md:grid-cols-2 gap-8">
-            <div className="col-span-1">
-              <Image
-                src="https://res.cloudinary.com/strcnigeria/image/upload/v1663186419/cld-sample-4.jpg"
-                width="100%"
-                height={100}
-                layout="responsive"
-                priority="true"
-                alt="image"
-              />
+          <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="col-span-1 h-80">
+              <div className="relative h-full w-full">
+                <Image
+                  src="https://res.cloudinary.com/strcnigeria/image/upload/v1663225347/Mass%20Centers/Benue%20Mission/IMG-20220803-WA0016_ssmgze.jpg"
+                  layout="fill"
+                  objectFit="cover"
+                  priority="true"
+                  alt="image"
+                />
+              </div>
             </div>
 
-            <div className="col-span-1">
-              <Image
-                src="https://res.cloudinary.com/strcnigeria/image/upload/v1663186418/cld-sample.jpg"
-                width="100%"
-                height={100}
-                layout="responsive"
-                priority="true"
-                alt="image"
-              />
+            <div className="col-span-1 h-80">
+              <div className="relative h-full w-full">
+                <Image
+                  src="https://res.cloudinary.com/strcnigeria/image/upload/v1663225347/Mass%20Centers/Benue%20Mission/IMG-20220803-WA0017_uqpeyx.jpg"
+                  layout="fill"
+                  objectFit="cover"
+                  priority="true"
+                  alt="image"
+                />
+              </div>
             </div>
 
-            <div className="col-span-1">
-              <Image
-                src="https://res.cloudinary.com/strcnigeria/image/upload/v1663186419/cld-sample-3.jpg"
-                width="100%"
-                height={100}
-                layout="responsive"
-                priority="true"
-                alt="image"
-              />
+            <div className="col-span-1 h-80">
+              <div className="relative h-full w-full">
+                <Image
+                  src="https://res.cloudinary.com/strcnigeria/image/upload/v1663225347/Mass%20Centers/Benue%20Mission/IMG-20220803-WA0014_khfmsg.jpg"
+                  layout="fill"
+                  objectFit="cover"
+                  priority="true"
+                  alt="image"
+                />
+              </div>
             </div>
 
-            <div className="col-span-1">
-              <Image
-                src="https://res.cloudinary.com/strcnigeria/image/upload/v1663186418/cld-sample-2.jpg"
-                width="100%"
-                height={100}
-                layout="responsive"
-                priority="true"
-                alt="image"
-              />
+            <div className="col-span-1 h-80">
+              <div className="relative h-full w-full">
+                <Image
+                  src="https://res.cloudinary.com/strcnigeria/image/upload/v1663225347/Mass%20Centers/Benue%20Mission/1648071272250_i0ydvk.jpg"
+                  layout="fill"
+                  objectFit="cover"
+                  priority="true"
+                  alt="image"
+                />
+              </div>
             </div>
           </div>
         </div>
