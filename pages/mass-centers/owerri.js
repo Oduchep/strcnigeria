@@ -71,8 +71,8 @@ const Owerri = () => {
               </p>
               <br />
               <p>
-                After Father Nkamuke's arrival in 2014, the Sunday Masses were
-                held in a members house in Nekede, whereas we continued our
+                After Father Nkamuke&apos;s arrival in 2014, the Sunday Masses
+                were held in a members house in Nekede, whereas we continued our
                 Sunday meetings in St. Paul’s Primary School, Owerri, whenever
                 the priest was not around. However, when the members
                 progressively increased to a sizable number, the need to look
