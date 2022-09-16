@@ -1,6 +1,7 @@
 const Routes = {
   HOME: '/',
   ABOUT_US: '/about-us',
+  MISSION: '/mass-centers',
   ABUJA_MISSION: '/mass-centers/abuja',
   ALIFOKPA_MISSION: '/mass-centers/alifokpa',
   BENUE_MISSION: '/mass-centers/benue',
