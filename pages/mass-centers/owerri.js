@@ -1,8 +1,18 @@
 import Image from 'next/image';
+import HeadSeo from '../../components/headSEO';
+import siteMetadata from '../../data/siteMetaData';
 
 const Owerri = () => {
   return (
     <>
+      <HeadSeo
+        title={`Owerri Mission`}
+        description={`Owerri mission page of society of traditional roman catholics of nigeria`}
+        canonicalUrl={siteMetadata.siteUrl}
+        ogTwitterImage={siteMetadata.siteLogoSquare}
+        ogType={'website'}
+      />
+
       <section className="bg-[url('https://res.cloudinary.com/strcnigeria/image/upload/v1663237576/Mass%20Centers/Bode%20Mission/IMG-20220903-WA0015_le6ja4.jpg')] h-80 md:h-[28rem] bg-cover bg-center bg-no-repeat relative">
         <div className="opacity-70 w-full h-full absolute top-0 bg-primary"></div>
         <div className="bg-gradient-to-l from-primary-2-light flex items-center justify-center md:justify-end h-full relative z-10">
