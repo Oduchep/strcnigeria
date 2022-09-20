@@ -1,17 +1,17 @@
 import React from 'react';
-import Head from 'next/head';
+import HeadSeo from '../components/headSEO';
+import siteMetadata from '../data/siteMetaData';
 
 const AboutUs = () => {
   return (
     <div>
-      <Head>
-        <title> Society of Traditional Roman Catholics, Nigeria</title>
-        <meta
-          name="about page"
-          content="about society of traditional roman catholics of nigeria"
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <HeadSeo
+        title={`About STRC`}
+        description={`the about page of society of traditional roman catholics of nigeria`}
+        canonicalUrl={siteMetadata.siteUrl}
+        ogTwitterImage={siteMetadata.siteLogoSquare}
+        ogType={'website'}
+      />
 
       <div className="h-[65vh]">
         <p className="mt-20 text-center"> Page In progress</p>

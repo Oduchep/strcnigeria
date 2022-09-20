@@ -1,17 +1,16 @@
-import Head from 'next/head';
-import Image from 'next/image';
+import siteMetadata from '../data/siteMetaData';
+import HeadSeo from '../components/headSEO';
 
 export default function Home() {
   return (
     <div>
-      <Head>
-        <title> Society of Traditional Roman Catholics, Nigeria</title>
-        <meta
-          name="strc"
-          content="society of traditional roman catholics of nigeria"
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <HeadSeo
+        title={`Society of Traditional Roman Catholics, Nigeria`}
+        description={`society of traditional roman catholics of nigeria`}
+        canonicalUrl={siteMetadata.siteUrl}
+        ogTwitterImage={siteMetadata.siteLogoSquare}
+        ogType={'website'}
+      />
 
       <section className="bg-hero-pattern bg-cover bg-center bg-no-repeat h-96 md:h-[38rem] relative flex items-center justify-center">
         <div className="bg-black opacity-50 w-full h-full absolute top-0"></div>

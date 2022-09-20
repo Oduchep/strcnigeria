@@ -14,7 +14,7 @@ const Navbar = ({ toggleNav, setToggleNav }) => {
         <Link href="/">
           <a
             className={`text-xs uppercase font-light py-5 px-5 whitespace-nowrap cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white mx-2 ${
-              route === '/' ? 'bg-primary-2' : 'bg-white'
+              route === '/' ? 'bg-primary-2 text-white' : 'bg-white'
             }`}
           >
             Home
@@ -23,7 +23,9 @@ const Navbar = ({ toggleNav, setToggleNav }) => {
         <Link href={Routes.ABOUT_US}>
           <a
             className={`text-xs uppercase font-light py-5 px-5 whitespace-nowrap cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white mx-2 ${
-              route.includes('about-us') ? 'bg-primary-2' : 'bg-white'
+              route.includes('about-us')
+                ? 'bg-primary-2 text-white'
+                : 'bg-white'
             }`}
           >
             About Us
@@ -32,7 +34,7 @@ const Navbar = ({ toggleNav, setToggleNav }) => {
         <Link href="/">
           <a
             className={`text-xs uppercase font-light py-5 px-5 whitespace-nowrap cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white mx-2 ${
-              route.includes('feeds') ? 'bg-primary-2' : 'bg-white'
+              route.includes('feeds') ? 'bg-primary-2 text-white' : 'bg-white'
             }`}
           >
             Feeds
@@ -53,7 +55,7 @@ const Navbar = ({ toggleNav, setToggleNav }) => {
         >
           <p
             className={`whitespace-nowrap py-5 px-5 ${
-              route.includes(Routes.MISSION) && 'bg-primary-2'
+              route.includes(Routes.MISSION) && 'bg-primary-2 text-white'
             }`}
           >
             Mass Centers
@@ -90,7 +92,9 @@ const Navbar = ({ toggleNav, setToggleNav }) => {
           <Link href="/">
             <a
               className={`text-xs uppercase font-light py-5 px-5 whitespace-nowrap cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white ${
-                route.includes('articles') ? 'bg-primary-2' : 'bg-white'
+                route.includes('articles')
+                  ? 'bg-primary-2 text-white'
+                  : 'bg-white'
               }`}
             >
               Articles
@@ -112,7 +116,9 @@ const Navbar = ({ toggleNav, setToggleNav }) => {
         <Link href="/">
           <a
             className={`text-xs uppercase font-light py-5 px-5 whitespace-nowrap cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white mx-2 ${
-              route.includes('newsletter') ? 'bg-primary-2' : 'bg-white'
+              route.includes('newsletter')
+                ? 'bg-primary-2 text-white'
+                : 'bg-white'
             }`}
           >
             Newsletter
@@ -122,7 +128,9 @@ const Navbar = ({ toggleNav, setToggleNav }) => {
         <Link href="/">
           <a
             className={`text-xs uppercase font-light py-5 px-5 whitespace-nowrap cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white mx-2 ${
-              route.includes('bulletin') ? 'bg-primary-2' : 'bg-white'
+              route.includes('bulletin')
+                ? 'bg-primary-2 text-white'
+                : 'bg-white'
             }`}
           >
             Bulletin
@@ -132,7 +140,9 @@ const Navbar = ({ toggleNav, setToggleNav }) => {
         <Link href="/">
           <a
             className={`text-xs uppercase font-light py-5 px-5 whitespace-nowrap cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white mx-2 ${
-              route.includes('seminary') ? 'bg-primary-2' : 'bg-white'
+              route.includes('seminary')
+                ? 'bg-primary-2 text-white'
+                : 'bg-white'
             }`}
           >
             Seminary
@@ -142,7 +152,9 @@ const Navbar = ({ toggleNav, setToggleNav }) => {
         <Link href="/">
           <a
             className={`text-xs uppercase font-light py-5 px-5 whitespace-nowrap cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white mx-2 ${
-              route.includes('religious-vocation') ? 'bg-primary-2' : 'bg-white'
+              route.includes('religious-vocation')
+                ? 'bg-primary-2 text-white'
+                : 'bg-white'
             }`}
           >
             Religious Vocation
@@ -152,7 +164,9 @@ const Navbar = ({ toggleNav, setToggleNav }) => {
         <Link href="/">
           <a
             className={`text-xs uppercase font-light py-5 px-5 whitespace-nowrap cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white mx-2 ${
-              route.includes('religious-vocation') ? 'bg-primary-2' : 'bg-white'
+              route.includes('religious-vocation')
+                ? 'bg-primary-2 text-white'
+                : 'bg-white'
             }`}
           >
             Support us

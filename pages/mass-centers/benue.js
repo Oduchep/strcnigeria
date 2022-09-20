@@ -1,9 +1,19 @@
 import Image from 'next/image';
 import React from 'react';
+import HeadSeo from '../../components/headSEO';
+import siteMetadata from '../../data/siteMetaData';
 
 const Benue = () => {
   return (
     <>
+      <HeadSeo
+        title={`Benue Mission`}
+        description={`Benue mission page of society of traditional roman catholics of nigeria`}
+        canonicalUrl={siteMetadata.siteUrl}
+        ogTwitterImage={siteMetadata.siteLogoSquare}
+        ogType={'website'}
+      />
+
       <section className="bg-[url('https://res.cloudinary.com/strcnigeria/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1663225347/Mass%20Centers/Benue%20Mission/IMG-20220803-WA0018_ndiwpa.jpg')] h-80 md:h-[28rem] bg-cover bg-top bg-no-repeat relative">
         <div className="opacity-50 w-full h-full absolute top-0 bg-primary-2"></div>
         <div className="bg-gradient-to-l from-primary flex items-center justify-center md:justify-end h-full relative z-10">
