@@ -43,7 +43,7 @@ const Navbar = ({ toggleNav, setToggleNav }) => {
         <div
           className={`group text-xs uppercase font-light  transition-all ease-in-out duration-150 mx-2`}
         >
-          <p className="py-5 px-5 whitespace-nowrap">Our Priests</p>
+          <span className="py-5 px-5 whitespace-nowrap">Our Priests</span>
           <div className="bg-primary-2 flex flex-col absolute invisible group-hover:visible top-14 opacity-100 z-50 min-w-[150px]">
             <SubmenuLink href="/" text="Nkamuke Bede" />
             <SubmenuLink href="/" text="Okerulu John" />
@@ -53,13 +53,13 @@ const Navbar = ({ toggleNav, setToggleNav }) => {
         <div
           className={`group text-xs uppercase font-light  transition-all ease-in-out duration-150 mx-2`}
         >
-          <p
+          <span
             className={`whitespace-nowrap py-5 px-5 ${
               route.includes(Routes.MISSION) && 'bg-primary-2 text-white'
             }`}
           >
             Mass Centers
-          </p>
+          </span>
           <div className="bg-primary-2 flex flex-col absolute invisible group-hover:visible top-14 opacity-100 z-50 min-w-[150px]">
             <SubmenuLink
               href={Routes.PORT_HARCOURT_MISSION}
