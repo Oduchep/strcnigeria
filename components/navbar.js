@@ -43,11 +43,17 @@ const Navbar = ({ toggleNav, setToggleNav }) => {
         <div
           className={`group text-xs uppercase font-light  transition-all ease-in-out duration-150 mx-2`}
         >
-          <span className="py-5 px-5 whitespace-nowrap">Our Priests</span>
+          <span
+            className={`whitespace-nowrap py-5 px-5 ${
+              route.includes(Routes.PRIESTS) && 'bg-primary-2 text-white'
+            }`}
+          >
+            Our Priests
+          </span>
           <div className="bg-primary-2 flex flex-col absolute invisible group-hover:visible top-14 opacity-100 z-50 min-w-[150px]">
-            <SubmenuLink href="/" text="Nkamuke Bede" />
-            <SubmenuLink href="/" text="Okerulu John" />
-            <SubmenuLink href="/" text="Ojeka Thomas" />
+            <SubmenuLink href={Routes.NKAMUKE_BEDE} text="Nkamuke Bede" />
+            <SubmenuLink href={Routes.OKERULU_JOHN} text="Okerulu John" />
+            <SubmenuLink href={Routes.OJEKA_THOMAS} text="Ojeka Thomas" />
           </div>
         </div>
         <div

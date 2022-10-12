@@ -12,5 +12,9 @@ const Routes = {
   OWERRI_MISSION: '/mass-centers/owerri',
   PORT_HARCOURT_MISSION: '/mass-centers/port-harcourt',
   UMUNZE_MISSION: '/mass-centers/umunze',
+  PRIESTS: '/priests',
+  NKAMUKE_BEDE: '/priests/nkamuke-bede',
+  OKERULU_JOHN: '/priests/okerulu-john',
+  OJEKA_THOMAS: '/priests/ojeka-thomas',
 };
 export default Routes;
