@@ -1,5 +1,5 @@
-import siteLogo from '../public/favicon.ico';
-import siteLogoSquare from '../public/strc-nigeria logo_white.PNG';
+// import siteLogo from '../public/favicon.ico';
+// import siteLogoSquare from '../public/strc-nigeria logo_white.PNG';
 
 const siteMetadata = {
   companyName: 'STRC Nigeria',
