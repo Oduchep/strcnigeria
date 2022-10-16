@@ -2,6 +2,7 @@ import React from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import { AiOutlineClose } from 'react-icons/ai';
+import { RiArrowDownSLine } from 'react-icons/ri';
 
 const MobileMenu = ({ toggleNav, setToggleNav }) => {
   const { route } = useRouter();
@@ -16,11 +17,11 @@ const MobileMenu = ({ toggleNav, setToggleNav }) => {
           <AiOutlineClose className="text-3xl" />
         </button>
 
-        <div className="mt-20 bg-white flex flex-col">
+        <div className="mt-20 bg-white flex flex-col px-10">
           <Link href="/">
             <a
               onClick={() => setToggleNav(false)}
-              className={`uppercase py-3 px-10 cursor-pointer transition-all ease-in-out hover:bg-primary-2 hover:font-normal hover:text-white ${
+              className={`uppercase py-3 cursor-pointer transition-all ease-in-out ${
                 route === '/'
                   ? 'text-base text-primary-2 font-semibold'
                   : 'font-light text-sm'
@@ -32,7 +33,7 @@ const MobileMenu = ({ toggleNav, setToggleNav }) => {
           <Link href="/about-us">
             <a
               onClick={() => setToggleNav(false)}
-              className={`uppercase py-3 px-10 cursor-pointer transition-all ease-in-out hover:bg-primary-2 hover:font-normal hover:text-white ${
+              className={`uppercase py-3 cursor-pointer transition-all ease-in-out ${
                 route.includes('about-us')
                   ? 'text-base text-primary-2 font-semibold'
                   : 'font-light text-sm'
@@ -44,7 +45,7 @@ const MobileMenu = ({ toggleNav, setToggleNav }) => {
           <Link href="/">
             <a
               onClick={() => setToggleNav(false)}
-              className={`uppercase py-3 px-10 cursor-pointer transition-all ease-in-out hover:bg-primary-2 hover:font-normal hover:text-white ${
+              className={`uppercase py-3 cursor-pointer transition-all ease-in-out ${
                 route.includes('feeds')
                   ? 'text-base text-primary-2 font-semibold'
                   : 'font-light text-sm'
@@ -53,36 +54,38 @@ const MobileMenu = ({ toggleNav, setToggleNav }) => {
               Feeds
             </a>
           </Link>
-          <Link href="/">
-            <a
+          <div className="flex items-center">
+            <span
               onClick={() => setToggleNav(false)}
-              className={`uppercase py-3 px-10 cursor-pointer transition-all ease-in-out hover:bg-primary-2 hover:font-normal hover:text-white ${
+              className={`uppercase py-3 cursor-pointer transition-all ease-in-out ${
                 route.includes('resources')
                   ? 'text-base text-primary-2 font-semibold'
                   : 'font-light text-sm'
               }`}
             >
               Our Priests
-            </a>
-          </Link>
+            </span>
+            <RiArrowDownSLine className="ml-3 text-lg" />
+          </div>
 
-          <Link href="/">
-            <a
+          <div className="flex items-center">
+            <span
               onClick={() => setToggleNav(false)}
-              className={`uppercase py-3 px-10 cursor-pointer transition-all ease-in-out hover:bg-primary-2 hover:font-normal hover:text-white ${
+              className={`uppercase py-3 cursor-pointer transition-all ease-in-out ${
                 route.includes('resources')
                   ? 'text-base text-primary-2 font-semibold'
                   : 'font-light text-sm'
               }`}
             >
               Mass Centers
-            </a>
-          </Link>
+            </span>
+            <RiArrowDownSLine className="ml-3 text-lg" />
+          </div>
 
           <Link href="/">
             <a
               onClick={() => setToggleNav(false)}
-              className={`uppercase py-3 px-10 cursor-pointer transition-all ease-in-out hover:bg-primary-2 hover:font-normal hover:text-white ${
+              className={`uppercase py-3 cursor-pointer transition-all ease-in-out ${
                 route.includes('resources')
                   ? 'text-base text-primary-2 font-semibold'
                   : 'font-light text-sm'
@@ -95,7 +98,7 @@ const MobileMenu = ({ toggleNav, setToggleNav }) => {
           <Link href="/">
             <a
               onClick={() => setToggleNav(false)}
-              className={`uppercase py-3 px-10 cursor-pointer transition-all ease-in-out hover:bg-primary-2 hover:font-normal hover:text-white ${
+              className={`uppercase py-3 cursor-pointer transition-all ease-in-out ${
                 route.includes('resources')
                   ? 'text-base text-primary-2 font-semibold'
                   : 'font-light text-sm'
@@ -108,7 +111,7 @@ const MobileMenu = ({ toggleNav, setToggleNav }) => {
           <Link href="/">
             <a
               onClick={() => setToggleNav(false)}
-              className={`uppercase py-3 px-10 cursor-pointer transition-all ease-in-out hover:bg-primary-2 hover:font-normal hover:text-white ${
+              className={`uppercase py-3 cursor-pointer transition-all ease-in-out ${
                 route.includes('resources')
                   ? 'text-base text-primary-2 font-semibold'
                   : 'font-light text-sm'
@@ -121,7 +124,7 @@ const MobileMenu = ({ toggleNav, setToggleNav }) => {
           <Link href="/">
             <a
               onClick={() => setToggleNav(false)}
-              className={`uppercase py-3 px-10 cursor-pointer transition-all ease-in-out hover:bg-primary-2 hover:font-normal hover:text-white ${
+              className={`uppercase py-3 cursor-pointer transition-all ease-in-out ${
                 route.includes('resources')
                   ? 'text-base text-primary-2 font-semibold'
                   : 'font-light text-sm'
@@ -134,7 +137,7 @@ const MobileMenu = ({ toggleNav, setToggleNav }) => {
           <Link href="/">
             <a
               onClick={() => setToggleNav(false)}
-              className={`uppercase py-3 px-10 cursor-pointer transition-all ease-in-out hover:bg-primary-2 hover:font-normal hover:text-white ${
+              className={`uppercase py-3 cursor-pointer transition-all ease-in-out ${
                 route.includes('resources')
                   ? 'text-base text-primary-2 font-semibold'
                   : 'font-light text-sm'
@@ -147,7 +150,7 @@ const MobileMenu = ({ toggleNav, setToggleNav }) => {
           <Link href="/">
             <a
               onClick={() => setToggleNav(false)}
-              className={`uppercase py-3 px-10 cursor-pointer transition-all ease-in-out hover:bg-primary-2 hover:font-normal hover:text-white ${
+              className={`uppercase py-3 cursor-pointer transition-all ease-in-out ${
                 route.includes('resources')
                   ? 'text-base text-primary-2 font-semibold'
                   : 'font-light text-sm'
