@@ -1,8 +1,8 @@
-import Link from 'next/link';
 import React from 'react';
 import { useRouter } from 'next/router';
 import { FaFacebookSquare } from 'react-icons/fa';
 import { ImYoutube2 } from 'react-icons/im';
+import Link from 'next/link';
 
 const Footer = () => {
   const { route } = useRouter();
@@ -23,36 +23,31 @@ const Footer = () => {
         </div>
 
         <div className="col-span-3 flex flex-col">
-          <Link href="/privacy-policy">
-            <a
-              className={`font-normal text-base cursor-pointer transition-all ease-in-out duration-150 hover:text-primary-2-light hover:font-medium hover:text-[17px] mb-2 ${
-                route === '/privacy-policy'
-                  ? 'text-primary-3-dark'
-                  : 'text-white'
-              }`}
-            >
-              Privacy Policy
-            </a>
+          <Link
+            href="/privacy-policy"
+            className={`font-normal text-base cursor-pointer transition-all ease-in-out duration-150 hover:text-primary-2-light hover:font-medium hover:text-[17px] mb-2 ${
+              route === '/privacy-policy' ? 'text-primary-3-dark' : 'text-white'
+            }`}
+          >
+            Privacy Policy
           </Link>
 
-          <Link href="/disclaimer">
-            <a
-              className={`font-normal text-base cursor-pointer transition-all ease-in-out duration-150 hover:text-primary-2-light hover:font-medium hover:text-[17px] mb-2 ${
-                route === '/disclaimer' ? 'text-primary-3-dark' : 'text-white'
-              }`}
-            >
-              Disclaimer
-            </a>
+          <Link
+            href="/disclaimer"
+            className={`font-normal text-base cursor-pointer transition-all ease-in-out duration-150 hover:text-primary-2-light hover:font-medium hover:text-[17px] mb-2 ${
+              route === '/disclaimer' ? 'text-primary-3-dark' : 'text-white'
+            }`}
+          >
+            Disclaimer
           </Link>
 
-          <Link href="/terms-of-use">
-            <a
-              className={`font-normal text-base cursor-pointer transition-all ease-in-out duration-150 hover:text-primary-2-light hover:font-medium hover:text-[17px] mb-2 ${
-                route === '/terms-of-use' ? 'text-primary-3-dark' : 'text-white'
-              }`}
-            >
-              Terms of Use
-            </a>
+          <Link
+            href="/terms-of-use"
+            className={`font-normal text-base cursor-pointer transition-all ease-in-out duration-150 hover:text-primary-2-light hover:font-medium hover:text-[17px] mb-2 ${
+              route === '/terms-of-use' ? 'text-primary-3-dark' : 'text-white'
+            }`}
+          >
+            Terms of Use
           </Link>
         </div>
 

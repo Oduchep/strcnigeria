@@ -11,35 +11,33 @@ const Navbar = ({ toggleNav, setToggleNav }) => {
     <nav className="bg-white border relative">
       {/* Desktop nav */}
       <div className="hidden md:flex xl:justify-center items-center overflow-x-auto w-full">
-        <Link href="/">
-          <a
-            className={`text-xs uppercase font-light py-5 px-5 whitespace-nowrap cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white mx-2 ${
-              route === '/' ? 'bg-primary-2 text-white' : 'bg-white'
-            }`}
-          >
-            Home
-          </a>
+        <Link
+          href="/"
+          className={`text-xs uppercase font-light py-5 px-5 whitespace-nowrap cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white mx-2 ${
+            route === '/' ? 'bg-primary-2 text-white' : 'bg-white'
+          }`}
+        >
+          Home
         </Link>
-        <Link href={Routes.ABOUT_US}>
-          <a
-            className={`text-xs uppercase font-light py-5 px-5 whitespace-nowrap cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white mx-2 ${
-              route.includes('about-us')
-                ? 'bg-primary-2 text-white'
-                : 'bg-white'
-            }`}
-          >
-            About Us
-          </a>
+
+        <Link
+          href={Routes.ABOUT_US}
+          className={`text-xs uppercase font-light py-5 px-5 whitespace-nowrap cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white mx-2 ${
+            route.includes('about-us') ? 'bg-primary-2 text-white' : 'bg-white'
+          }`}
+        >
+          About Us
         </Link>
-        <Link href="/">
-          <a
-            className={`text-xs uppercase font-light py-5 px-5 whitespace-nowrap cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white mx-2 ${
-              route.includes('feeds') ? 'bg-primary-2 text-white' : 'bg-white'
-            }`}
-          >
-            Feeds
-          </a>
+
+        <Link
+          href="/"
+          className={`text-xs uppercase font-light py-5 px-5 whitespace-nowrap cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white mx-2 ${
+            route.includes('feeds') ? 'bg-primary-2 text-white' : 'bg-white'
+          }`}
+        >
+          Feeds
         </Link>
+
         <div
           className={`group text-xs uppercase font-light  transition-all ease-in-out duration-150 mx-2`}
         >
@@ -95,16 +93,15 @@ const Navbar = ({ toggleNav, setToggleNav }) => {
           </div>
         </div>
         <div className="group text-xs uppercase font-light mx-2">
-          <Link href="/">
-            <a
-              className={`text-xs uppercase font-light py-5 px-5 whitespace-nowrap cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white ${
-                route.includes('articles')
-                  ? 'bg-primary-2 text-white'
-                  : 'bg-white'
-              }`}
-            >
-              Articles
-            </a>
+          <Link
+            href="/"
+            className={`text-xs uppercase font-light py-5 px-5 whitespace-nowrap cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white ${
+              route.includes('articles')
+                ? 'bg-primary-2 text-white'
+                : 'bg-white'
+            }`}
+          >
+            Articles
           </Link>
 
           <div className="bg-primary-2 flex flex-col absolute invisible group-hover:visible top-14 opacity-100 z-50 min-w-[150px]">
@@ -119,64 +116,55 @@ const Navbar = ({ toggleNav, setToggleNav }) => {
           </div>
         </div>
 
-        <Link href="/">
-          <a
-            className={`text-xs uppercase font-light py-5 px-5 whitespace-nowrap cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white mx-2 ${
-              route.includes('newsletter')
-                ? 'bg-primary-2 text-white'
-                : 'bg-white'
-            }`}
-          >
-            Newsletter
-          </a>
+        <Link
+          href="/"
+          className={`text-xs uppercase font-light py-5 px-5 whitespace-nowrap cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white mx-2 ${
+            route.includes('newsletter')
+              ? 'bg-primary-2 text-white'
+              : 'bg-white'
+          }`}
+        >
+          Newsletter
         </Link>
 
-        <Link href="/">
-          <a
-            className={`text-xs uppercase font-light py-5 px-5 whitespace-nowrap cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white mx-2 ${
-              route.includes('bulletin')
-                ? 'bg-primary-2 text-white'
-                : 'bg-white'
-            }`}
-          >
-            Bulletin
-          </a>
+        <Link
+          href="/"
+          className={`text-xs uppercase font-light py-5 px-5 whitespace-nowrap cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white mx-2 ${
+            route.includes('bulletin') ? 'bg-primary-2 text-white' : 'bg-white'
+          }`}
+        >
+          Bulletin
         </Link>
 
-        <Link href="/">
-          <a
-            className={`text-xs uppercase font-light py-5 px-5 whitespace-nowrap cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white mx-2 ${
-              route.includes('seminary')
-                ? 'bg-primary-2 text-white'
-                : 'bg-white'
-            }`}
-          >
-            Seminary
-          </a>
+        <Link
+          href="/"
+          className={`text-xs uppercase font-light py-5 px-5 whitespace-nowrap cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white mx-2 ${
+            route.includes('seminary') ? 'bg-primary-2 text-white' : 'bg-white'
+          }`}
+        >
+          Seminary
         </Link>
 
-        <Link href="/">
-          <a
-            className={`text-xs uppercase font-light py-5 px-5 whitespace-nowrap cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white mx-2 ${
-              route.includes('religious-vocation')
-                ? 'bg-primary-2 text-white'
-                : 'bg-white'
-            }`}
-          >
-            Religious Vocation
-          </a>
+        <Link
+          href="/"
+          className={`text-xs uppercase font-light py-5 px-5 whitespace-nowrap cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white mx-2 ${
+            route.includes('religious-vocation')
+              ? 'bg-primary-2 text-white'
+              : 'bg-white'
+          }`}
+        >
+          Religious Vocation
         </Link>
 
-        <Link href="/">
-          <a
-            className={`text-xs uppercase font-light py-5 px-5 whitespace-nowrap cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white mx-2 ${
-              route.includes('religious-vocation')
-                ? 'bg-primary-2 text-white'
-                : 'bg-white'
-            }`}
-          >
-            Support us
-          </a>
+        <Link
+          href="/"
+          className={`text-xs uppercase font-light py-5 px-5 whitespace-nowrap cursor-pointer transition-all ease-in-out duration-150 hover:bg-primary-2-light hover:font-normal hover:text-white mx-2 ${
+            route.includes('religious-vocation')
+              ? 'bg-primary-2 text-white'
+              : 'bg-white'
+          }`}
+        >
+          Support us
         </Link>
       </div>
 
