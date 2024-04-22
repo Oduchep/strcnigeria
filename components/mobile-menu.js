@@ -18,41 +18,38 @@ const MobileMenu = ({ toggleNav, setToggleNav }) => {
         </button>
 
         <div className="mt-20 bg-white flex flex-col px-10">
-          <Link href="/">
-            <a
-              onClick={() => setToggleNav(false)}
-              className={`uppercase py-3 cursor-pointer transition-all ease-in-out ${
-                route === '/'
-                  ? 'text-base text-primary-2 font-semibold'
-                  : 'font-light text-sm'
-              }`}
-            >
-              Home
-            </a>
+          <Link
+            href="/"
+            onClick={() => setToggleNav(false)}
+            className={`uppercase py-3 cursor-pointer transition-all ease-in-out ${
+              route === '/'
+                ? 'text-base text-primary-2 font-semibold'
+                : 'font-light text-sm'
+            }`}
+          >
+            Home
           </Link>
-          <Link href="/about-us">
-            <a
-              onClick={() => setToggleNav(false)}
-              className={`uppercase py-3 cursor-pointer transition-all ease-in-out ${
-                route.includes('about-us')
-                  ? 'text-base text-primary-2 font-semibold'
-                  : 'font-light text-sm'
-              }`}
-            >
-              About Us
-            </a>
+          <Link
+            href="/about-us"
+            onClick={() => setToggleNav(false)}
+            className={`uppercase py-3 cursor-pointer transition-all ease-in-out ${
+              route.includes('about-us')
+                ? 'text-base text-primary-2 font-semibold'
+                : 'font-light text-sm'
+            }`}
+          >
+            About Us
           </Link>
-          <Link href="/">
-            <a
-              onClick={() => setToggleNav(false)}
-              className={`uppercase py-3 cursor-pointer transition-all ease-in-out ${
-                route.includes('feeds')
-                  ? 'text-base text-primary-2 font-semibold'
-                  : 'font-light text-sm'
-              }`}
-            >
-              Feeds
-            </a>
+          <Link
+            href="/"
+            onClick={() => setToggleNav(false)}
+            className={`uppercase py-3 cursor-pointer transition-all ease-in-out ${
+              route.includes('feeds')
+                ? 'text-base text-primary-2 font-semibold'
+                : 'font-light text-sm'
+            }`}
+          >
+            Feeds
           </Link>
           <div className="flex items-center">
             <span
@@ -82,82 +79,76 @@ const MobileMenu = ({ toggleNav, setToggleNav }) => {
             <RiArrowDownSLine className="ml-3 text-lg" />
           </div>
 
-          <Link href="/">
-            <a
-              onClick={() => setToggleNav(false)}
-              className={`uppercase py-3 cursor-pointer transition-all ease-in-out ${
-                route.includes('resources')
-                  ? 'text-base text-primary-2 font-semibold'
-                  : 'font-light text-sm'
-              }`}
-            >
-              Articles
-            </a>
+          <Link
+            href="/"
+            onClick={() => setToggleNav(false)}
+            className={`uppercase py-3 cursor-pointer transition-all ease-in-out ${
+              route.includes('resources')
+                ? 'text-base text-primary-2 font-semibold'
+                : 'font-light text-sm'
+            }`}
+          >
+            Articles
           </Link>
 
-          <Link href="/">
-            <a
-              onClick={() => setToggleNav(false)}
-              className={`uppercase py-3 cursor-pointer transition-all ease-in-out ${
-                route.includes('resources')
-                  ? 'text-base text-primary-2 font-semibold'
-                  : 'font-light text-sm'
-              }`}
-            >
-              Newsletter
-            </a>
+          <Link
+            href="/"
+            onClick={() => setToggleNav(false)}
+            className={`uppercase py-3 cursor-pointer transition-all ease-in-out ${
+              route.includes('resources')
+                ? 'text-base text-primary-2 font-semibold'
+                : 'font-light text-sm'
+            }`}
+          >
+            Newsletter
           </Link>
 
-          <Link href="/">
-            <a
-              onClick={() => setToggleNav(false)}
-              className={`uppercase py-3 cursor-pointer transition-all ease-in-out ${
-                route.includes('resources')
-                  ? 'text-base text-primary-2 font-semibold'
-                  : 'font-light text-sm'
-              }`}
-            >
-              Bulletin
-            </a>
+          <Link
+            href="/"
+            onClick={() => setToggleNav(false)}
+            className={`uppercase py-3 cursor-pointer transition-all ease-in-out ${
+              route.includes('resources')
+                ? 'text-base text-primary-2 font-semibold'
+                : 'font-light text-sm'
+            }`}
+          >
+            Bulletin
           </Link>
 
-          <Link href="/">
-            <a
-              onClick={() => setToggleNav(false)}
-              className={`uppercase py-3 cursor-pointer transition-all ease-in-out ${
-                route.includes('resources')
-                  ? 'text-base text-primary-2 font-semibold'
-                  : 'font-light text-sm'
-              }`}
-            >
-              Seminary
-            </a>
+          <Link
+            href="/"
+            onClick={() => setToggleNav(false)}
+            className={`uppercase py-3 cursor-pointer transition-all ease-in-out ${
+              route.includes('resources')
+                ? 'text-base text-primary-2 font-semibold'
+                : 'font-light text-sm'
+            }`}
+          >
+            Seminary
           </Link>
 
-          <Link href="/">
-            <a
-              onClick={() => setToggleNav(false)}
-              className={`uppercase py-3 cursor-pointer transition-all ease-in-out ${
-                route.includes('resources')
-                  ? 'text-base text-primary-2 font-semibold'
-                  : 'font-light text-sm'
-              }`}
-            >
-              Religious Vocation
-            </a>
+          <Link
+            href="/"
+            onClick={() => setToggleNav(false)}
+            className={`uppercase py-3 cursor-pointer transition-all ease-in-out ${
+              route.includes('resources')
+                ? 'text-base text-primary-2 font-semibold'
+                : 'font-light text-sm'
+            }`}
+          >
+            Religious Vocation
           </Link>
 
-          <Link href="/">
-            <a
-              onClick={() => setToggleNav(false)}
-              className={`uppercase py-3 cursor-pointer transition-all ease-in-out ${
-                route.includes('resources')
-                  ? 'text-base text-primary-2 font-semibold'
-                  : 'font-light text-sm'
-              }`}
-            >
-              Support us
-            </a>
+          <Link
+            href="/"
+            onClick={() => setToggleNav(false)}
+            className={`uppercase py-3 cursor-pointer transition-all ease-in-out ${
+              route.includes('resources')
+                ? 'text-base text-primary-2 font-semibold'
+                : 'font-light text-sm'
+            }`}
+          >
+            Support us
           </Link>
         </div>
       </div>
